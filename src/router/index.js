@@ -10,7 +10,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: '/index',
+        path: 'index',
         component: () => import('@/views/index.vue'),
       },
     ],
@@ -18,6 +18,7 @@ export const constantRoutes = [
 ];
 
 const router = createRouter({
+  // history: createWebHistory(),
   history: createWebHashHistory(),
   routes: constantRoutes,
   // 路由滚动行为处理函数
