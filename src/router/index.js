@@ -11,7 +11,8 @@ export const constantRoutes = [
     redirect: '/index',
     children: [
       {
-        path: 'index',
+        path: '/index',
+        name: 'Index',
         component: () => import('@/views/index.vue'),
       },
     ],
