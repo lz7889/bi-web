@@ -6,7 +6,7 @@ import Layout from '@/layout/index.vue';
 export const constantRoutes = [
   //首页
   {
-    path: '/',
+    path: '',
     component: Layout,
     redirect: '/index',
     children: [
