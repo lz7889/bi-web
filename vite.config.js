@@ -6,7 +6,7 @@ import autoImport from 'unplugin-auto-import/vite';
 // https://vite.dev/config/
 export default defineConfig({
   // 默认情况下，vite 会假设你的应用是被部署在一个域名的根路径上
-  base: process.env.VITE_APP_ENV === 'production' ? './' : '/',
+  base: process.env.VITE_APP_ENV === 'production' ? '/' : '/',
   plugins: [
     vue(),
     autoImport({

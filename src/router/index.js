@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
 
 import Layout from '@/layout/index.vue';
 
@@ -18,7 +18,7 @@ export const constantRoutes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: constantRoutes,
   // 路由滚动行为处理函数
   scrollBehavior(to, from, savedPosition) {
