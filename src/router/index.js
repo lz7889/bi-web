@@ -8,6 +8,7 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
+    redirect: '/index',
     children: [
       {
         path: 'index',
