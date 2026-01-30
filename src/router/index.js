@@ -17,6 +17,11 @@ export const constantRoutes = [
       },
     ],
   },
+  {
+    path: '/easy-player',
+    name: 'EasyPlayer',
+    component: () => import('@/views/easy-player.vue'),
+  },
 ];
 
 const router = createRouter({
